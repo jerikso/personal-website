@@ -4,8 +4,8 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-    main: '#000000',
-    contrastText: '#ffffff',
+      main: '#000000',
+      contrastText: '#ffffff',
     },
   },
   typography: {
@@ -37,16 +37,17 @@ const theme = createTheme({
   },
   components: {
     MuiButton: {
-    styleOverrides: {
-      root: {
-      opacity:1,
-      backgroundColor: '#000000',
-      color: '#ffffff',
-      '&:hover': {
-        opacity:0.8,
+      styleOverrides: {
+        root: {
+          opacity: 1,
+          backgroundColor: '#000000',
+          color: '#ffffff',
+          borderRadius: 0, // No rounded corners
+          '&:hover': {
+            opacity: 0.8,
+          },
+        },
       },
-      },
-    },
     },
   },
 });

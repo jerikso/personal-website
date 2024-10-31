@@ -18,11 +18,37 @@
 }
 
 .projects-text {
-  font-size: 3em;
+  font-size: 5em;
   padding: 10px;
   text-align: center;
 }
 
 .project-item {
   padding: 20px;
+}
+
+.project-header {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .project-desc {
+      font-size: 2em;
+  }
+  .project-outer-container {
+      width: 75%;
+      height: 80vh;
+  }
+  .projects-text {
+    font-size: 10em;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-desc {
+      font-size: 1.5em;
+  }
+  .project-outer-container {
+      width: 85%;
+  }
 }
