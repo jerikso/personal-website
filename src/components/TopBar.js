@@ -10,7 +10,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 
 import './TopBar.css';
 
-const navItems = ['home', 'about', 'projects', 'contact'];
+const navItems = ['Home', 'About', 'Projects', 'Contact'];
 
 export default function TopBar( {refs}) {
 return (

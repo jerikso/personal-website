@@ -25,17 +25,17 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <TopBar refs={{"home": homeRef, "about": aboutRef, "projects": projectsRef, "contact": contactRef}}/>
+      <TopBar refs={{"Home": homeRef, "About": aboutRef, "Projects": projectsRef, "Contact": contactRef}}/>
       <section ref={homeRef} id="home">
       <Image src={process.env.PUBLIC_URL + portfolio} alt="logo"/>
       </section>
-      <section ref={aboutRef} id="about">
-      <Textbox text={aboutText} id="about"/>
+      <section ref={aboutRef} id="About">
+      <Textbox text={aboutText}/>
       </section>
-      <section ref={projectsRef} id="projects">
+      <section ref={projectsRef} id="Projects">
       <Projects/>
       </section>
-      <section ref={contactRef} id="contact">
+      <section ref={contactRef} id="Contact">
       <Contact/>
       </section>
       <div style={{height: "200px"}}></div>

@@ -10,7 +10,9 @@ export default function Contact() {
 
     return (
         <div className='outer-contact-container'>
-            <h1 className='contact-text'>Contact</h1>
+            <Typography variant="h3" component="h3" className='contact-text'>
+                Contact
+            </Typography>
             <div className='contact-container'>
                 <a href="mailto:contact@jonathanerikson.com" className='contact-item'>
                     <MailOutline style={{ fontSize: 30 }} />

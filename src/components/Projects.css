@@ -1,10 +1,12 @@
 .project-outer-container {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: center;
   width: 50%;
   padding: 0;
   height: 100vh;
+  align-items: center;
+  margin: auto;
 }
 
 .project-container {
@@ -16,6 +18,11 @@
 }
 
 .projects-text {
-  font-size: 2em;
+  font-size: 3em;
   padding: 10px;
+  text-align: center;
+}
+
+.project-item {
+  padding: 20px;
 }
