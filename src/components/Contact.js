@@ -12,10 +12,10 @@ export default function Contact() {
         <div className='outer-contact-container'>
             <h1 className='contact-text'>Contact</h1>
             <div className='contact-container'>
-                <a href="mailto:jonatan.erikson@gmail.com" className='contact-item'>
+                <a href="mailto:contact@jonathanerikson.com" className='contact-item'>
                     <MailOutline style={{ fontSize: 30 }} />
                     <Typography variant="button" component="span">
-                        jonatan.erikson@gmail.com
+                        contact@jonathanerikson.com
                     </Typography>
                 </a>
                 <a href="tel:+46761179022" className='contact-item'>
