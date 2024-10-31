@@ -1,24 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
+import {theme} from './Theme';
+import { ThemeProvider } from '@mui/material/styles';
+
+import { useRef } from 'react';
+import React, { useState } from 'react';
+
+import TopBar from './components/TopBar';
+import Textbox from './components/Textbox';
+import Image from './components/Image';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+
+const aboutText = 'Master of Science in Engineering – Computer Science from KTH Royal Institute of Technology. Several years of .NET development experience. Strong foundation in software engineering principles, with a special interest in Data Science and Machine Learning.';
+const portfolio = "/images/portfolio.png"; 
+
 
 function App() {
+
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <TopBar refs={{"home": homeRef, "about": aboutRef, "projects": projectsRef, "contact": contactRef}}/>
+      <section ref={homeRef} id="home">
+      <Image src={process.env.PUBLIC_URL + portfolio} alt="logo"/>
+      </section>
+      <section ref={aboutRef} id="about">
+      <Textbox text={aboutText} id="about"/>
+      </section>
+      <section ref={projectsRef} id="projects">
+      <Projects/>
+      </section>
+      <section ref={contactRef} id="contact">
+      <Contact/>
+      </section>
+      <div style={{height: "200px"}}></div>
+    </ThemeProvider>
   );
 }
 

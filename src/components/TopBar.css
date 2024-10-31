@@ -1,0 +1,7 @@
+.topbar-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+  width: 100%;
+  padding: 10px;
+}

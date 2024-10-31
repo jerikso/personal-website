@@ -1,0 +1,15 @@
+.text {
+    color: black;
+    font-size: 3em;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 0;
+    height: 100vh;
+}

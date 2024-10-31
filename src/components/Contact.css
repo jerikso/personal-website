@@ -1,0 +1,43 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.contact-item, .contact-item:hover, .contact-item:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.outer-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  padding: 0;
+}
+.contact-text {
+  font-size: 2em;
+  padding: 10px;
+}
