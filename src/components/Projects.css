@@ -31,6 +31,13 @@
   padding-bottom: 10px;
 }
 
+.project-links .MuiTypography-body2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Adds space between the links */
+    margin-top: 12px;
+}
+
 @media (max-width: 1200px) {
   .project-desc {
       font-size: 2em;

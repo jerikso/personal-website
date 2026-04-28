@@ -12,7 +12,7 @@ import Image from './components/Image';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-const aboutText = 'Master of Science in Engineering – Computer Science from KTH Royal Institute of Technology. Several years of .NET development experience. Strong foundation in software engineering principles, with a special interest in Data Science and Machine Learning.';
+const aboutText = 'Master of Science in Engineering – Computer Science from KTH Royal Institute of Technology. Software Engineer @ Saab Aeronautics. Several years of .NET development experience. Strong foundation in software engineering principles, with a special interest in Data Science and Machine Learning.';
 const portfolio = "/images/portfolio.png"; 
 
 

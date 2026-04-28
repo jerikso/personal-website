@@ -8,6 +8,26 @@ export default function Projects() {
             <Typography variant='h3' className='projects-text'>Projects</Typography>
             <div className='project-container'>
                 <div className='project-item'>
+                    <Typography variant='h5' className='project-header'>Map of Music</Typography>
+                    <Typography variant='body1' className='project-desc'>
+                        A high-dimensional artist explorer that visualizes connections between your favorite musicians. 
+                        This application leverages the <strong>Last.fm API</strong> and <strong>UMAP</strong> algorithms 
+                        to project complex musical similarities into an intuitive 2D interface. Built with a high-performance 
+                        <strong> FastAPI</strong> and <strong>PostgreSQL</strong> backend, featuring a responsive 
+                        <strong> React</strong> and <strong>TypeScript</strong> frontend.
+                    </Typography>
+                    <div className='project-links'>
+                        <Typography variant='body2'>
+                            <a href='https://music.jonathanerikson.com/' target="_blank" rel="noopener noreferrer" className='project-link'>
+                                music.jonathanerikson.com
+                            </a>
+                            <a href='https://github.com/jerikso/map-of-music' target="_blank" rel="noopener noreferrer" className='project-link'>
+                                View on GitHub
+                            </a>
+                        </Typography>
+                    </div>
+                </div>
+                <div className='project-item'>
                     <Typography variant='h5' className='project-header'>Popify</Typography>
                     <Typography variant='body1' className='project-desc'>Find new music, browse your most played songs, artists, and genres. Add items to a shopping list, and check out with a new playlist based on your selections. Built in React with TypeScript, with data from Spotify's Api.</Typography>
                     <div className='project-links'>
